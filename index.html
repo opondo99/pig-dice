@@ -29,9 +29,22 @@
                                 </div>
                             </div>
                     </div>
+
+                    
+
                     <div class="buttons">
                         <button class="btn1">New Game</button>
-                        <button class="btn2">Rules</button>
+                        <button class="btn2" onclick="myFunction()">Rules</button>
+                        <div id="rules">
+                            <h3></h3>RULES</h3>
+                            <ul>
+                                <li>Each player get to roll the dice once.</li>
+                                <li>If you roll doubles you get an extra roll</li>
+                                <li>If your roll a 1 you are not awarded any points.</li>
+                                <li>The goal is to score 100 points</li>
+                                <li>The first player to score 100 points wins the game</li>
+                            </ul>
+                        </div>
                         <button onclick="rollDice()" id="btn3"></i>Roll Dice</button>
                     </div>
                         <div class="player-1-panel">

@@ -15,6 +15,10 @@ body{
     background: pink;
 }
 
+#rules{
+    display: none;
+}
+
 .jumbotron{
     display: grid;
     grid-template-columns: 1fr 1fr;
