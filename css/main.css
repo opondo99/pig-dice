@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    align-items: center;
+}
+
+.jumbotron{
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr
+}
+
+.panel-{
+    grid-column: 1 / 2 ;
+    display: grid;
+}
