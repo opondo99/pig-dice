@@ -12,10 +12,10 @@ This is a game where we have two players who are taking turns to roll dice. Each
 All you need to play this game is internet a browser and a github account.
 
 # TOOLS USED
-*HTML
-*CSS
-*Bootstrap
-*JavaScript
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
 
 # BUGS 
 In case of any challenges you can contact me @markopondo.m@gmail.com
