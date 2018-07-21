@@ -1,5 +1,6 @@
 body{
-    background: rgb(170, 216, 170);
+    /* background: rgb(170, 216, 170); */
+    background-image: url(/images/pigdiceback.jpg);
 }
 
 .container{
@@ -15,24 +16,35 @@ body{
 
 .jumbotron{
     display: grid;
-    height: 90px;
+    grid-template-columns: 1fr 1fr;
+    height: 150px;
     width: 50%;
+    padding: 0;
     margin-left: 25%; 
     margin-right: 25%;
     margin-top: 30px;
     margin-bottom: 0;
     text-align: center;
     border-radius: 0;
-    overflow: hidden;
+    background: white;
 }
 
+.jumbotron img{
+    grid-column: 1 / 2;
+    height: 150px;
+    margin-left: 0;
+    float: left;
+}
+
+
 .jumbotron h1{
+    grid-column: 2 / 3;
     display: grid;
-    text-align: center;
     font-family: 'Chewy', cursive;
-    width: 50%;
+    width: 100%;
+    margin-top: 15%;
+    background: white;
     color: black;
-    margin-left: 25%;
 }
 
 .main{
@@ -93,8 +105,7 @@ body{
 .player-current-0{
     grid-row: 3 / 4;
     display: grid;
-    height: 100px;
-    width: 50%;
+    grid-template-rows: 1fr 1fr;
     border-radius: 3px;  
     margin-left: auto;
     margin-right: auto;
@@ -109,8 +120,7 @@ body{
 .player-current-1{
     grid-row: 3 / 4;
     display: grid;
-    height: 100px;
-    width: 50%;
+    grid-template-rows: 1fr 1fr;
     border-radius: 3px;  
     margin-left: auto;
     margin-right: auto;
@@ -119,6 +129,16 @@ body{
     text-align: center;
     background: green;
     font-family: 'Fjalla One', sans-serif;
+}
+
+.player-current-label{
+    grid-row: 1 / 2;
+    height: 25px
+}
+
+.player-current-score{
+    grid-row: 2 / 3;
+    height: 30px;
 }
 
 .buttons{
@@ -130,20 +150,20 @@ body{
 .btn1{
     grid-row: 1 / 2;
     color: black;
-    height: 40px;
+    height: 50%;
     border-radius: 3px;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
 .btn2{
-    height: 40px;
+    height: 30%;
     border-radius: 3px;
     margin-top: 5px;
 }
 
 #btn3{
-    height: 40px;
+    height: 30%;
     border-radius: 5px;
     margin-top: 60%;
     background: green;
