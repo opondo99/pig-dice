@@ -12,31 +12,31 @@
             <script src="js/script.js"></script>
         </head>
         <body>
-                <div class="jumbotron">
-                    <img src="images/pigback3.jpg">
-                    <h1>PIG DICE</h1>
-                </div>
+            <div class="jumbotron">
+                <img src="images/pigback3.jpg">
+                <h1>PIG DICE</h1>
+            </div>
+
             <div class="container">
                 <div class="main">
                     <div class="player-0-panel">
-                            <div class="game-panel">
-                                <div class="player-name" id="name-0">Player One</div>
-                                <div class="player-score" id="score-0">0</div>
-        
-                                <div class="player-current-0">
-                                    <div class="player-current-label">current score</div>
-                                    <div class="player-current-score" id="current-0">0</div>
-                                </div>
-                            </div>
-                    </div>
+                        <div class="game-panel">
+                            <div class="player-name" id="name-0">Player One</div>
+                            <div class="player-score" id="score-0">0</div>
 
-                    
+                            <div id="status"></div>
+                            <div class="player-current-0">
+                                <div class="player-current-label">current score</div>
+                                <div class="player-current-score" id="current-0">0</div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="buttons">
                         <button class="btn1">New Game</button>
                         <button class="btn2" onclick="myFunction()">Rules</button>
                         <div id="rules">
-                            <h3></h3>RULES</h3>
+                            <h3></h3><b>RULES</b></h3>
                             <ul>
                                 <li>Each player get to roll the dice once.</li>
                                 <li>If you roll doubles you get an extra roll</li>
@@ -47,11 +47,13 @@
                         </div>
                         <button onclick="rollDice()" id="btn3"></i>Roll Dice</button>
                     </div>
+
                         <div class="player-1-panel">
                             <div class="game-panel">
                                 <div class="player-name" id="name-1">Player Two</div>
                                 <div class= "player-score" id="score-1">0</div>
-            
+
+                                <div id="status"></div>
                                 <div class="player-current-1">
                                     <div class="player-current-label">current score</div>
                                     <div class="player-current-score" id="current-1">0</div>

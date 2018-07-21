@@ -7,6 +7,27 @@ function myFunction() {
     }
 }
 
+
+function rollDice(this) {
+    var score = document.getElementById("score-");
+    var currentScore = document.grtElementById("current-");
+    var status = document.getElementById("status");
+
+    var roll1 = math.floor(math.random()* 6) + 1;
+    var roll2 = math.floor(math.random()* 6) + 1;
+    var getTotal = roll1 + roll2;
+    score.innerHTML = getTotal++;
+    currentScore.innerHTML = getTotal;
+    status.innerHTML = "You rolled " + getTotal;
+}
+
+for (var getTotal = 1; getTotal <= score ; getTotal++ ) {
+    if ()
+}
+
+
+
+
 // $(document).ready(function(){
 //     $().(function(event){
 //         event.preventDefault()

@@ -17,6 +17,9 @@ body{
 
 #rules{
     display: none;
+    width: 200px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .jumbotron{
