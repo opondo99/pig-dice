@@ -1,29 +1,45 @@
 body{
-    background: green;
+    background: rgb(170, 216, 170);
 }
 
 .container{
     display: grid;
-    align-items: center;
     width: 50%;
-    margin-top: 100px;
-    padding: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: auto;
-    background: white;
+    background: rgb(216, 196, 196);
 }
 
 .jumbotron{
-    width: 100%;
-    clear: both;
+    display: grid;
+    width: 50%;
+    margin-left: 25%; 
+    margin-right: 20%;
+    margin-top: 30px;
+    margin-bottom: 0;
     text-align: center;
     border-radius: 0;
-    background-image: url(images/harry);
+    overflow: hidden;
+}
+
+.jumbotron h1{
+    display: grid;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    width: 50%;
+    color: black;
+    margin-left: 30%;
 }
 
 .main{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    background: white;
+    text-align: center;
+    padding-top: 0;
+    background: rgb(216, 196, 196);
 }
 
 .panel-{
@@ -34,25 +50,48 @@ body{
 .game-panel{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
+    text-align: center; 
+}
+
+.player-0-panel{
+    grid-column: 1 / 2;
+    display: grid;
+}
+
+.player-1-panel{
+    grid-column: 3 / 4;
 }
 
 .player-name{
+    grid-row: 1 / 2;
     display: grid;
-    background: red;
+    /* background: red; */
     height: 100px;
-    width: 50%;
+    width: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-weight: medium;
     text-align: center;
     padding-top: 40px;
 }
 
 #name-1{
+    grid-row: 1 / 2;
     display: grid;
-    background: green;
+    /* background: green; */
     height: 100px;
     width: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
     text-align: center;
     padding-top: 40px
+}
+
+.player-score{
+    grid-row: 2 / 3;
+    width: 100%;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 .player-current-0{
@@ -60,14 +99,13 @@ body{
     display: grid;
     height: 100px;
     width: 50%;
+    background: red;
     border-radius: 3px;  
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     padding: 25px;
     text-align: center;
-    background: red;
-     
 }
 
 
@@ -75,20 +113,37 @@ body{
     grid-row: 3 / 4;
     display: grid;
     height: 100px;
-    width: 100%;
+    width: 50%;
     border-radius: 3px;  
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     padding: 25px;
-    padding-right: 50px;
+    padding-right: 50px; 
     text-align: center;
-    background: green;
+    background: green; 
 }
 
-button{
+.buttons{
     grid-column: 2 / 3;
     display: grid;
-    margin-top: 70%;
-    margin-left: 30%;
+    grid-template-rows: 1fr 1fr 2fr;
+    /* margin-top: 70%;
+    margin-left: 30%; */
+}
+
+.btn1{
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.btn2{
+    height: 50px;
+    margin-top: 5px;
+}
+
+#btn3{
+    height: 50px;
+    margin-top: 60%;
 }

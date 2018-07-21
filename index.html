@@ -3,6 +3,7 @@
         <head>
             <title>Pig-dice game</title>
             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Chewy|Rajdhani" rel="stylesheet">
             <link href="css/main.css" rel="stylesheet">
             <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -11,10 +12,10 @@
             <script src="js/script.js"></script>
         </head>
         <body>
+                <div class="jumbotron"><h1>PIG DICE</h1></div>
             <div class="container">
-                <div class="jumbotron">PIG DICE</div>
                 <div class="main">
-                    <div class="player-0-panel active-0">
+                    <div class="player-0-panel">
                             <div class="game-panel">
                                 <div class="player-name" id="name-0">Player One</div>
                                 <div class="player-score" id="score-0">0</div>
@@ -24,6 +25,11 @@
                                     <div class="player-current-score" id="current-0">0</div>
                                 </div>
                             </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn1">New Game</button>
+                        <button class="btn2">Rules</button>
+                        <button onclick="rollDice()" class="btn btn-primary" id="btn3"></i>Roll Dice</button>
                     </div>
                         <div class="player-1-panel">
                             <div class="game-panel">
@@ -36,9 +42,7 @@
                                 </div> 
                             </div>                   
                         </div>                   
-                        <div>
-                                <button onclick="rollDice()" class="btn bt-primary"></i>Roll Dice</button>
-                        </div>
+                        
                 </div>
                 
             </div>
