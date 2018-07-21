@@ -1,17 +1,18 @@
 body{
-    background-image: url();
+    background-image: url(/images/pigback4.jpg);
+    background-size: cover;
 }
 
 .container{
     display: grid;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 50%;
     margin-top: 0;
     padding-top: 0;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: auto;
-    background: rgb(216, 150, 150);
+    background: pink;
 }
 
 .jumbotron{
@@ -52,7 +53,7 @@ body{
     grid-template-columns: 2fr 1fr 2fr;
     text-align: center;
     padding-top: 0;
-    background: rgb(216, 150, 150);
+    background: pink;
 }
 
 .panel-{
