@@ -1,17 +1,17 @@
 body{
-    /* background: rgb(170, 216, 170); */
-    background-image: url(/images/pigdiceback.jpg);
+    background-image: url();
 }
 
 .container{
     display: grid;
+    opacity: 0.8;
     width: 50%;
     margin-top: 0;
     padding-top: 0;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: auto;
-    background: rgb(216, 196, 196);
+    background: rgb(216, 150, 150);
 }
 
 .jumbotron{
@@ -52,7 +52,7 @@ body{
     grid-template-columns: 2fr 1fr 2fr;
     text-align: center;
     padding-top: 0;
-    background: rgb(216, 196, 196);
+    background: rgb(216, 150, 150);
 }
 
 .panel-{
