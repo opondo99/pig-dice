@@ -1,7 +1,8 @@
 body{
-    background-image: url(/images/pigback4.jpg);
+    background-image: url(images/pigback4.jpg);
     background-size: cover;
 }
+
 
 .container{
     display: grid;
@@ -20,6 +21,8 @@ body{
     width: 200px;
     padding-bottom: 0;
     padding-top: 0;
+    background: white;
+    padding-right: 20px;
 }
 
 .jumbotron{
