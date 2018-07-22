@@ -1,10 +1,67 @@
-function myFunction() {
-    var x = document.getElementById("rules");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+
+
+
+var playerOne;var playerTwo;
+function player(playerName,turn) {
+    this.playerName= playerName;
+    this.score = 0;
+    tis.totalRoll = 0;
+    this.turn = turn;
+
+};
+
+player.prototype.roll = function(){
+    var rand = Math.floor(Math.random() * 6)+ 1;
+    this.score = rand;
+};
+
+player.prototype.switch = function(){
+
+    if (this.turn === true){
+        this.turn = false;
     } else {
-        x.style.display = "none";
+        this.turn = true;
     }
+};
+
+
+player.prototype.reset = function(){
+    this.score = 0;
+    this.totalRoll = 0;
+
+};
+
+
+$(document).ready(function() {
+
+    $("").submit(function(event) {
+        event.preventDefault();
+        var player1 = $("").val();
+        var player2 = $("").val();
+        $(this).hide();
+        
+        playerOne = new player(player1, true);
+        playerTwo = new player(player2, false);
+
+        $("").html(playerOne.playerName);
+        $().html(playerTwo.playerName);
+
+
+    })
+})
+
+function rollDice() {
+    if(playerOne.turn === true){
+
+        if(playerOne.totalRoll >= 100){
+            alert(playerOne.playerName + " WINS THE GAME!!!");
+                playerOne.reset();
+        } else {
+            playerOne.rollDice();
+            $("").html(You rolled a + " ")
+        }
+    }
+
 }
 
 
@@ -47,3 +104,12 @@ function myFunction() {
 //         status.innerHTML = "You rolled a DOUBLE! You get a free turn!");
 //     }
 // });
+
+function myFunction() {
+    var x = document.getElementById("rules");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
