@@ -5,7 +5,7 @@ var playerOne;var playerTwo;
 function player(playerName,turn) {
     this.playerName= playerName;
     this.score = 0;
-    tis.totalRoll = 0;
+    this.totalRoll = 0;
     this.turn = turn;
 
 };
@@ -34,17 +34,17 @@ player.prototype.reset = function(){
 
 $(document).ready(function() {
 
-    $("").submit(function(event) {
+    $("#btn3").submit(function(event) {
         event.preventDefault();
-        var player1 = $("").val();
-        var player2 = $("").val();
+        var player1 = $("current-0").val();
+        var player2 = $("current-1").val();
         $(this).hide();
         
         playerOne = new player(player1, true);
         playerTwo = new player(player2, false);
 
-        $("").html(playerOne.playerName);
-        $().html(playerTwo.playerName);
+        $("#name-0").html(playerOne.playerName);
+        $("name-1").html(playerTwo.playerName);
 
 
     })
@@ -57,12 +57,43 @@ function rollDice() {
             alert(playerOne.playerName + " WINS THE GAME!!!");
                 playerOne.reset();
         } else {
-            playerOne.rollDice();
-            $("").html(You rolled a + " ")
-        }
-    }
+            playerOne.roll();
+            $("#current-0").html(playerOne.score)
+        
+         if(playerOne.score === 1){
 
-}
+            playerOne.totalRoll = 0;
+            $("score-0").html(playerOne.totalRoll);
+
+            playerOne.switch();
+            playerTwo.switch();
+
+        } else {
+            playerOne.totalRoll += playerOne.score;
+            $("score-0").html(playerOne.totalRoll);
+        }
+        }
+    } else if(playerTwo.totalRoll >= 100) {
+        alert(playerTwo.playerName +" WINS THE GAME !!!")
+        playerTwo.reset();
+    } else {
+        playerTwo.roll();
+        $("current-1").html(playerTwo.score);
+
+        if(playerTwo.score === 1){
+            playerTwo.totalRoll = 0;
+            $("score-1").html(playerTwo.totalRoll);
+            
+            playerOne.switch();
+            playerTwo.switch();
+        } else {
+            playerTwo.totalRoll += playerTwo.score;
+            $("score-1").html(playerTwo.totalRoll);
+        }
+        
+    }
+} 
+
 
 
 // function rollDice(this) {
