@@ -1,6 +1,3 @@
-
-
-
 var playerOne;var playerTwo;
 function player(playerName,turn) {
     this.playerName= playerName;
@@ -36,8 +33,8 @@ $(document).ready(function() {
 
     $("#btn3").submit(function(event) {
         event.preventDefault();
-        var player1 = $("current-0").val();
-        var player2 = $("current-1").val();
+        var player1 = $("score-0").val();
+        var player2 = $("score-1").val();
         $(this).hide();
         
         playerOne = new player(player1, true);
@@ -76,7 +73,7 @@ function rollDice() {
     } else if(playerTwo.totalRoll >= 100) {
         alert(playerTwo.playerName +" WINS THE GAME !!!")
         playerTwo.reset();
-    } else {
+        } else {
         playerTwo.roll();
         $("current-1").html(playerTwo.score);
 

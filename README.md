@@ -1,5 +1,5 @@
 # PROJECT
-Pig dice game 
+Pig dice game  
 https://opondo99.github.io/pig-dice/
 
 # AUTHOR
